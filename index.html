@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proyecto Final - Power BI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Movilidad: Ocupación y Frecuencia de Despacho</h1>
+
+<h2>Introducción</h2>
+<p>
+El transporte público en Bogotá enfrenta uno de sus mayores retos en los corredores universitarios, donde la demanda se concentra en franjas específicas. Este estudio analiza el comportamiento del sistema frente a la Universidad Distrital, enfocándose en la franja de 14:00 a 16:00, donde se presentan altos niveles de saturación.
+</p>
+
+<h2>Objetivo</h2>
+<p>
+Analizar los niveles de ocupación del transporte público para identificar patrones de demanda, saturación y eficiencia operativa.
+</p>
+
+<h2>Preguntas de análisis</h2>
+<ul>
+<li>¿En qué franjas horarias hay mayor ocupación?</li>
+<li>¿Qué tipo de vehículo presenta mayor saturación?</li>
+<li>¿Existen diferencias entre accesos?</li>
+</ul>
+
+<h2>Metodología</h2>
+<p>
+Se analizaron 940 registros de ocupación visual en la franja de 14:00 a 16:00, considerando variables como hora, tipo de vehículo, acceso y nivel de ocupación. El análisis se realizó mediante Power BI.
+</p>
+
+<h2>Análisis de resultados</h2>
+
+<iframe title="Ocupacion visual TP" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOGMyNzcyY2YtOGJjMy00M2IxLThkMWEtYmM4YjAyYTI3M2M4IiwidCI6ImQ1MTM4OGVmLTZhYjAtNDM2My05Zjk0LWQ1NjY0NGE0NTk3MCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+
+<h3>Matriz de ocupación por hora</h3>
+
+<p>
+La demanda aumenta progresivamente desde las 14:00 hasta alcanzar su punto máximo a las 15:15, donde se presentan los mayores niveles de saturación. Posteriormente, la demanda disminuye, evidenciando un patrón asociado a la salida académica.
+</p>
+
+<h3>Frecuencia de despacho</h3>
+
+<p>
+La frecuencia de despacho aumenta durante el pico de demanda; sin embargo, no es suficiente para evitar condiciones de saturación, evidenciando un desfase entre oferta y demanda.
+</p>
+
+<h3>Tipo de vehículo</h3>
+
+<p>
+Los busetones presentan mayores niveles de saturación, mientras que los buses tienen un comportamiento más equilibrado y los intermunicipales muestran capacidad ociosa.
+</p>
+
+<h3>Accesos</h3>
+
+<p>
+Los accesos 1 y 2 concentran mayor demanda y sobrecarga, mientras que el acceso 4 presenta menor utilización, evidenciando una distribución desigual del sistema.
+</p>
+
+<h2>Conclusiones</h2>
+<ul>
+<li>La demanda se concentra entre 15:00 y 15:30</li>
+<li>Predominan niveles de ocupación medios y altos</li>
+<li>Los busetones presentan mayor saturación</li>
+<li>Existen diferencias importantes entre accesos</li>
+<li>El problema es operativo, no de cantidad de vehículos</li>
+</ul>
+
+<h2>Recomendaciones</h2>
+<ul>
+<li>Aumentar frecuencia en horas pico</li>
+<li>Usar vehículos de mayor capacidad</li>
+<li>Redistribuir rutas entre accesos</li>
+<li>Implementar monitoreo en tiempo real</li>
+</ul>
+
+</body>
+</html>
