@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <title>Proyecto Final Power BI</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  
+  <style>
+    .header-area {
+      position: fixed !important;
+      top: 30px !important;
+      left: 0;
+      right: 0;
+      background-color: #fff !important;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+      z-index: 10000 !important;
+      border-radius: 50px;
+      margin: 0 auto;
+      width: 90%;
+      height: 70px;
+      display: flex;
+      align-items: center;
+    }
+
+    .header-area .main-nav {
+      background: transparent !important;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0 30px;
+    }
+
+    .header-area .logo {
+      flex: 0 0 auto;
+      margin-right: 40px;
+    }
+
+    .header-area .logo h1 {
+      font-size: 22px !important;
+      color: #7a6ad8 !important;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-bottom: 0;
+      line-height: 70px;
+    }
+
+    .header-area .nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header-area .nav li {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .header-area .nav li a {
+      font-weight: 500 !important;
+      font-size: 14px !important;
+      color: #1e1e1e !important;
+      text-transform: capitalize !important;
+      height: 40px !important;
+      line-height: 40px !important;
+      padding: 0 20px !important;
+      border-radius: 25px;
+      transition: all .3s;
+      display: block;
+    }
+
+    .header-area .nav li a:hover,
+    .header-area .nav li a.active {
+      background-color: #7a6ad8 !important;
+      color: #fff !important;
+      opacity: 1 !important;
+    }
+
+    .main-banner {
+      background-color: #7a6ad8 !important; 
+      background-image: url('assets/images/banner-bg.png') !important; 
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 240px 0px 120px 0px;
+      border-radius: 0px 0px 150px 0px;
+    }
+
+    .header-text-static {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .header-text-static h2 {
+      font-size: 50px;
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      line-height: 1.2;
+    }
+
+    .header-text-static p {
+      color: #fff !important;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .service-item {
+      background-color: #f1f0fe !important;
+      padding: 80px 30px 40px 30px !important;
+      border-radius: 30px !important;
+      text-align: center;
+      position: relative;
+      margin-top: 50px;
+      height: 100%;
+    }
+
+    .service-item .icon {
+      width: 80px;
+      height: 80px;
+      background-color: #7a6ad8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .service-item .icon img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .recom-item { margin-bottom: 80px; }
+    
+    .recom-box {
+      background: #f1f0fe;
+      padding: 50px 50px 50px 180px; 
+      border-radius: 50px;
+      position: relative;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .recom-img-container {
+      position: absolute;
+      left: -60px; 
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+    }
+
+    .recom-img-container img {
+      width: 200px; 
+      height: 200px;
+      border-radius: 40px;
+      object-fit: cover;
+      border: 5px solid #fff;
+    }
+
+    .recom-box h5 {
+      color: #7a6ad8;
+      font-weight: 800;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .section-title-dark {
+      color: #1e1e1e;
+      font-weight: 800;
+      font-size: 36px;
+      margin: 60px 0;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <h1>Proyecto Power BI</h1>
+                    </a>
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Introducción</a></li>
+                      <li class="scroll-to-section"><a href="#preguntas">Preguntas</a></li>
+                      <li class="scroll-to-section"><a href="#dashboard">Dashboard</a></li>
+                      <li class="scroll-to-section"><a href="#conclusiones">Conclusiones</a></li>
+                      <li class="scroll-to-section"><a href="#recomendaciones">Recomendaciones</a></li>
+                    </ul>   
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="header-text-static">
+            <h2>Análisis de Transporte Público</h2>
+            <p>Estudio técnico sobre la saturación de demanda en los accesos de la Universidad Distrital. A través de este análisis, se identifican los puntos críticos de congestión para proponer mejoras operativas basadas en datos reales.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="preguntas">
+    <div class="container text-center">
+      <h3 class="section-title-dark">PREGUNTAS CLAVE</h3>
+      <div class="row">
+        <div class="col-lg-4 mb-5">
+          <div class="service-item">
+            <div class="icon"><img src="assets/images/service-01.png" alt=""></div>
+            <h4>¿En qué franjas horarias hay mayor ocupación?</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-5">
+          <div class="service-item">
+            <div class="icon"><img src="assets/images/service-02.png" alt=""></div>
+            <h4>¿Qué tipo de vehículo presenta mayor saturación?</h4>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-5">
+          <div class="service-item">
+            <div class="icon"><img src="assets/images/service-03.png" alt=""></div>
+            <h4>¿Existen diferencias entre accesos?</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="dashboard">
+    <div class="container text-center">
+      <h3 class="section-title-dark">DASHBOARD INTERACTIVO</h3>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 30px; box-shadow: 0px 10px 30px rgba(0,0,0,0.1);">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGMyNzcyY2YtOGJjMy00M2IxLThkMWEtYmM4YjAyYTI3M2M4IiwidCI6ImQ1MTM4OGVmLTZhYjAtNDM2My05Zjk0LWQ1NjY0NGE0NTk3MCIsImMiOjR9" frameborder="0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowFullScreen="true"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="conclusiones">
+    <div class="container text-center">
+      <h3 class="section-title-dark">CONCLUSIONES</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-30"><div class="events_item"><div class="thumb"><img src="assets/images/course-01.jpg"></div><div class="down-content"><h4>Demanda máxima entre 15:00 y 15:30</h4></div></div></div>
+        <div class="col-lg-4 col-md-6 mb-30"><div class="events_item"><div class="thumb"><img src="assets/images/course-02.jpg"></div><div class="down-content"><h4>Ocupación media-alta constante</h4></div></div></div>
+        <div class="col-lg-4 col-md-6 mb-30"><div class="events_item"><div class="thumb"><img src="assets/images/course-03.jpg"></div><div class="down-content"><h4>Saturación crítica en Busetones</h4></div></div></div>
+        <div class="col-lg-4 col-md-6 mb-30"><div class="events_item"><div class="thumb"><img src="assets/images/course-04.jpg"></div><div class="down-content"><h4>Desequilibrio de carga por acceso</h4></div></div></div>
+        <div class="col-lg-4 col-md-6 mb-30"><div class="events_item"><div class="thumb"><img src="assets/images/course-05.jpg"></div><div class="down-content"><h4>Fallas en la coordinación operativa</h4></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section" id="recomendaciones">
+    <div class="container">
+      <h3 class="section-title-dark text-center">RECOMENDACIONES</h3>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-11 recom-item">
+          <div class="recom-box">
+            <div class="recom-img-container">
+              <img src="assets/images/event-01.jpg" alt="">
+            </div>
+            <h5>Gestión de Frecuencias Operativas</h5>
+            <p>Optimizar los intervalos de despacho en la franja crítica de 15:00 a 15:30 para reducir los niveles de saturación identificados.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-11 recom-item">
+          <div class="recom-box">
+            <div class="recom-img-container">
+              <img src="assets/images/event-02.jpg" alt="">
+            </div>
+            <h5>Escalabilidad de Capacidad</h5>
+            <p>Implementar el uso de buses de mayor capacidad técnica durante los periodos de saturación máxima para absorber la demanda.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-11 recom-item">
+          <div class="recom-box">
+            <div class="recom-img-container">
+              <img src="assets/images/event-03.jpg" alt="">
+            </div>
+            <h5>Redistribución de Rutas</h5>
+            <p>Redistribuir rutas entre accesos para equilibrar la carga operativa y reducir la congestión en los puntos críticos.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-11 recom-item">
+          <div class="recom-box">
+            <div class="recom-img-container">
+              <img src="assets/images/event-04.jpg" alt="">
+            </div>
+            <h5>Monitoreo en Tiempo Real</h5>
+            <p>Implementar monitoreo en tiempo real para ajustar dinámicamente la operación del transporte según la demanda.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<footer style="padding: 40px 0;"><div class="container text-center"><p>© 2026 Universidad Distrital -Nicoll Andrea Castillo Montes.</p></div></footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
